@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="Form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="img/logo.png" alt="not loaded">
+        </div>   
+            <div id="mid">
+                <a href="Home.html" >Home </a>
+                <a href="Form.html" class="active">Apply Online </a>
+                <a href="#">Track </a>
+                <a href="#">Contact Us </a>                
+            </div>
+        <div id="right">
+            <input type="text" name="search" id="search" placeholder="Search this website"> 
+        </div>
+    </header> 
+    <form action="Backend.php"></form>
+    <div id="outer">
+        <form action="Backend.php"></form>
+        <h2>Student Registration</h2>
+        <div id="basicdetails" class="details">
+          <header>Basic Details</header>
+          <div id="StudName">
+              Student Name <br>
+              <input type="text" name="myname" id="fname" placeholder="First Name">
+              <input type="text" name="myname" id="mname" placeholder="Middle Name">
+              <input type="text" name="myname" id="lname" placeholder="Last Name">
+          </div>
+          <div class="left">
+              Date of Birth <br>
+              <input type="date" name="myDOB" id="DOB">
+          </div>
+          <div class="right">
+              Gender <br>
+            <label for="Gender"></label>
+            <select name="myGender" id="Gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Others</option>
+            </select>
+          </div>
+          <div class="left">
+              Do you have Aadhaar Number? <br>
+              <label for="Do you have Aadhaar Number?"></label>
+              <select name="Aadhaar" id="UID">
+                  <option value="Y">Yes</option>
+                  <option value="N">No</option>
+              </select>
+          </div>
+          <div class="right">
+              Aadhaar <br>
+              <input type="number" name="myadhar" id="adhar" placeholder="Aadhaar No">
+          </div>
+        </div>
+        <div id="presentcourse" class="details">
+            <header>Present Course of Study</header>
+            <div class="left">
+                Programme Type <br>
+                <select name="Program" id="pname">
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                    <option value="HS">HS</option>
+                    <option value="Oth">Others</option>
+                </select>
+            </div>
+            <div class="right">
+                Course Name <br>
+                <select name="Course" id="cname">
+                    <option value="BE">BE</option>
+                    <option value="BA">BA</option>
+                    <option value="BSc">BSc</option>
+                    <option value="MBBS">MBBS</option>
+                    <option value="BLLB">BA-LLB</option>
+                    <option value="HS">HS</option>
+                </select>
+            </div>
+            <div class="left">
+                State of Institution <br>
+                <select name="state" id="soi">
+                <option value="Wb">West Bengal</option>
+                <option value="Oth">Others</option>
+                </select>
+            </div>
+            <div class="right">
+                District of Institution <br>
+                <select name="district" id="dist">
+                    <option value="k">Kolkata</option>
+                    <option value="N24">North 24pgs</option>
+                    <option value="s24">South 24pgs</option>
+                    <option value="Bd">Bardhaman</option>
+                    <option value="Oth">Other</option>
+                </select>
+            </div>
+            <div class="left">
+                Name of Institute <br>
+                <input type="text" name="intstname" id="iname" placeholder="Enter name of your Institue">
+            </div>
+        </div>
+        <div id="contactdetails" class="details">
+            <header>Contact Details</header>
+            <div class="left" style="display:block;">
+                Mobile No <br>
+                <input type="number" name="myNumber" id="phno" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="left" >
+                Email Id<br>
+                <input type="email" name="myemail" id="eid" placeholder="Enter your Email Id">
+            </div>
+            <div class="right" >
+                Re-Enter Email Id<br>
+                <input type="email" name="myconfirmedemail" id="ceid" placeholder="Re-Enter your Email Id">
+            </div>
+        </div>
+        <div id="password" class="details">
+            <header>Password</header>
+            <div class="left">
+                Password <br>
+                <input type="text" name="Password" id="pword" placeholder="Enter Password">
+            </div>
+            <div class="right">
+                Confirm Password <br>
+                <input type="text" name="Password" id="cpword" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div id="submit">
+            <input type="submit" value="Register">
+        </div>
+    </div>       
+</body>
+</html>
